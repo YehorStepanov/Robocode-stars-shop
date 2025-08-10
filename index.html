@@ -2,127 +2,128 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/package-lock.json/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/package-lock.json/assets/star-D7SaSUHG.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Stars shop</title>
     <script type="module" crossorigin src="/package-lock.json/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/package-lock.json/assets/styles-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/package-lock.json/assets/styles-ovaIWHLb.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/package-lock.json/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
+      <div class="container">
+        <nav class="nav">
+          <a class="nav-logo" href="./index.html" aria-label="Site logo">
+            <svg class="nav-logo-icon" width="100" height="30">
+              <use href="{=$icon-path}"></use>
+            </svg>
+          </a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-curr}" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-act}" href="./stars-shop.html"
+                >Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-curr}" href="./timer.html"
+                >Timer</a
+              >
+            </li>
+          </ul>
+          <div class="amount-stars">
+            <svg class="star-image" width="30" height="30">
+              <use href="/package-lock.json/assets/sprite-Dy34WJ3r.svg#icon-star-empty"></use>
+            </svg>
+            <p class="js-text-stars">0</p>
+          </div>
+        </nav>
+      </div>
+    </header>
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/package-lock.json/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
+      <section class="hero-section">
+        <div class="container main-container">
+          <h1>Наша ціль на сьогодні:</h1>
+          <div class="amount-stars">
+            <svg class="star-image" width="30" height="30">
+              <use href="/package-lock.json/assets/sprite-Dy34WJ3r.svg#icon-star-empty"></use>
+            </svg>
+            <p class="js-text-desirable">0</p>
+          </div>
+        </div>
+      </section>
+      <section class="bonus-section">
+        <div class="container bonus-container">
+          <div class="good-bonus">
+            <h2 class="bonus-ht">Гарні дії:</h2>
+            <ul class="bonus-list good-actions">
+              <li class="bonus-item" value="1">
+                <p class="bonus-text">
+                  Швидко зробив завдання <span class="points">+1</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="2">
+                <p class="bonus-text">
+                  Прибрав робоче місце <span class="points">+2</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="2">
+                <p class="bonus-text">
+                  Дотримувався правил уроку <span class="points">+2</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="3">
+                <p class="bonus-text">
+                  Вірна відповідь <span class="points">+3</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="5">
+                <p class="bonus-text">
+                  Додав креатив у роботу <span class="points">+5</span>
+                </p>
+              </li>
+              <li class="bonus-item js-help-frend" value="10">
+                <p class="bonus-text">
+                  Допоміг сусідові <span class="points">+10</span>
+                </p>
+              </li>
+            </ul>
+          </div>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
+          <div class="bad-bonus">
+            <h2 class="bonus-ht">Погані дії:</h2>
+            <ul class="bonus-list bad-actions">
+              <li class="bonus-item" value="-3">
+                <p class="bonus-text">
+                  Заважав іншим <span class="points">-3</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="-4">
+                <p class="bonus-text">
+                  Ігнорував вказівки <span class="points">-4</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="-5">
+                <p class="bonus-text">
+                  Не виконав завдання <span class="points">-5</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="-8">
+                <p class="bonus-text">
+                  Грубо поводився <span class="points">-8</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="-10">
+                <p class="bonus-text">
+                  Псував матеріали <span class="points">-10</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
 
   </body>
 </html>
