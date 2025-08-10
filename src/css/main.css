@@ -1,0 +1,62 @@
+body {
+}
+.amount-stars {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.star-image {
+}
+
+.hero-section {
+  background-image: url(../img/hero.jpg);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+}
+.hero-section .amount-stars{
+    fill: white;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bonus-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+}
+.bonus-ht {
+  margin-bottom: 20px;
+}
+.good-bonus .bonus-ht {
+  color: #59a10d;
+  font-size: 32px;
+}
+.bad-bonus .bonus-ht {
+  color: #ef4040;
+  font-size: 32px;
+}
+.bonus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.good-actions .bonus-item{
+cursor: pointer;
+    color: #77e800;
+  background-color: #18210e;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+.bad-actions .bonus-item{
+    cursor: pointer;
+  color: #b51b1b;
+  background-color: #18210e;
+  border-radius: 4px;
+  margin-left: 5px;
+  font-size: 20px;
+}

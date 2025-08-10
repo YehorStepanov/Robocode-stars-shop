@@ -2,21 +2,127 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./img/star.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Stars shop</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a class="nav-logo" href="./index.html" aria-label="Site logo">
+            <svg class="nav-logo-icon" width="100" height="30">
+              <use href="{=$icon-path}"></use>
+            </svg>
+          </a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-curr}" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-act}" href="./stars-shop.html"
+                >Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {=$highlight-curr}" href="./timer.html"
+                >Timer</a
+              >
+            </li>
+          </ul>
+          <div class="amount-stars">
+            <svg class="star-image" width="30" height="30">
+              <use href="./img/sprite.svg#icon-star-empty"></use>
+            </svg>
+            <p class="js-text-stars">0</p>
+          </div>
+        </nav>
+      </div>
+    </header>
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+      <section class="hero-section">
+        <div class="container main-container">
+          <h1>Наша ціль на сьогодні:</h1>
+          <div class="amount-stars">
+            <svg class="star-image" width="30" height="30">
+              <use href="./img/sprite.svg#icon-star-empty"></use>
+            </svg>
+            <p class="js-text-desirable">0</p>
+          </div>
+        </div>
+      </section>
+      <section class="bonus-section">
+        <div class="container bonus-container">
+          <div class="good-bonus">
+            <h2 class="bonus-ht">Гарні дії:</h2>
+            <ul class="bonus-list good-actions">
+              <li class="bonus-item" value="1">
+                <p class="bonus-text">
+                  Швидко зробив завдання <span class="points">+1</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="2">
+                <p class="bonus-text">
+                  Прибрав робоче місце <span class="points">+2</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="2">
+                <p class="bonus-text">
+                  Дотримувався правил уроку <span class="points">+2</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="3">
+                <p class="bonus-text">
+                  Вірна відповідь <span class="points">+3</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="5">
+                <p class="bonus-text">
+                  Додав креатив у роботу <span class="points">+5</span>
+                </p>
+              </li>
+              <li class="bonus-item js-help-frend" value="10">
+                <p class="bonus-text">
+                  Допоміг сусідові <span class="points">+10</span>
+                </p>
+              </li>
+            </ul>
+          </div>
 
-    <load src="./partials/footer.html" />
+          <div class="bad-bonus">
+            <h2 class="bonus-ht">Погані дії:</h2>
+            <ul class="bonus-list bad-actions">
+              <li class="bonus-item" value="-3">
+                <p class="bonus-text">
+                  Заважав іншим <span class="points">-3</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="-4">
+                <p class="bonus-text">
+                  Ігнорував вказівки <span class="points">-4</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="-5">
+                <p class="bonus-text">
+                  Не виконав завдання <span class="points">-5</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="-8">
+                <p class="bonus-text">
+                  Грубо поводився <span class="points">-8</span>
+                </p>
+              </li>
+              <li class="bonus-item" value="-10">
+                <p class="bonus-text">
+                  Псував матеріали <span class="points">-10</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script type="module" src="./main.js"></script>
   </body>
